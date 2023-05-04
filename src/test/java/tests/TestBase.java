@@ -45,7 +45,6 @@ public class TestBase {
     @AfterEach
     void afterEach() {
         String sessionId = Selenide.sessionId().toString();
-
         Attach.pageSource();
         closeWebDriver();
 
